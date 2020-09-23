@@ -1,0 +1,148 @@
+Here's RepShell v0.4 (about time or I will never
+reach v 1.0). For the first time its really 
+usable for users with little computer knowledge.
+As always the Exe is included in the zip, all 
+you need is the VB6 Runtime dlls. If you don't 
+have this, I am planning a website for RepShell 
+where you can also download the total setup 
+package. But in the meantime you can download 
+it from Microsoft.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	      REMARKS
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+RECOMMENDED SCREEN RES : I developed RepShell in
+1024*768, but actually there are no screen limits.
+If your screen res is to low, it looks crappy, but
+so does everthing else, including explorer.
+
+DUE TO ALL KINDS OF SMALL THINGS, NOT COMPATIBLE 
+WITH WINNT/2000. I'LL TRY TO FIX THIS SOON
+
+AFTER CHANGING THE WALLPAPER FROM WINDOWS SCREEN
+PROPERTIES, PRESS F5 TO REFRESH DESKTOP.
+
+THE SPECIAL BALLOON TOOLTIP DOESN'T ALWAYS WORK
+IN THE EXECUTABLE.
+
+PLEASE RUN RunMeFirst.bat before trying to run 
+RepShell. This is a batch file that registers 
+the controls and dll used by RepShell.
+
+LOOP HOLE IF YOU GET STUCK: PRESS CTRL + SHIFT + 
+Right Click the systray to start explorer.
+
+PLEASE READ THE COMMENTS.TXT FILE TO GET STARTED
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	      REMARKS
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+'GET STARTED: Some hotkeys and functions
+    RightClick My computer Icon to get a menu
+    Right click desktop
+    Key F5 to refresh desktop
+    Ctrl+Alt+A      : End the program
+    Windows key + S : Show Start Menu on mouse 
+		      position
+
+    'ONLY WORK IF REPSHELL IS DEFAULT SHELL
+    Windows key + F : Show Favorites menu at 
+    		      mouse position
+    Windows key + R : Show RunDialog
+    'END ONLY WORK IF REPSHELL IS DEFAULT SHELL
+
+    Popupmenu button on keyboard can also be used
+    You can use the arrowkeys for desktop icon 
+    navigation and menu nav
+
+The changes in this update are
+
+     * Renaming is working perfectly, clicking 
+       antything else will be "felt" and renaming 
+       will be completed
+     * Removed QuickExplorer, instead I am searching 
+       for a way to start explorer without starting 
+       the explorer shell
+     * FIXED : When you click space between Desktop 
+               icon and label it is now also selected
+     * ADDED : Now able to choose menu font
+     * ADDED : function to minimize taskbox, so only 
+	       taskicons are visible
+     * FIXED : Menu width, wasn't calculated right
+     * DESIGN : Menus are rounded
+     * ADDED : Now run startup programs, links in 
+	       startup folder and even in registry
+               But only if repshell is default shell, 
+	       so this won't bug you if you're just testing
+     * FIXED : Quickicons are drawn correctly
+     * ADDED : Now a standard icon is shown in the 
+	       taskbox if a window has no icon
+     * FIXED : Sometimes the desktopicon labels were to 
+	       big (height) for the text in them, no more
+	       Width is still to big sometimes
+     * ADDED : Now detects screen res change and resizes 
+	       accordingly (still buggy)
+     * FIXED : Menu arrow navigation, when reached it 
+	       end of list, it didn't go back up
+     * ADDED : Special balloon tooltip to show connection 
+	       properties. But only works in Shell for the 
+ 	       moment, rarel in the exe
+     * ADDED : FINALLY FOUND A WAY TO LETMENU UNLOAD ITSELF IF 
+	       IT LOSES FOCUS
+     * FIXED : A GIANT MEMORY LEAK IN MENUDRAWING FUNTION,
+               THAT CAUSED REPSHELL TO CRASH AFTER A COUPLE
+               OF USES OF THE MENUSYSTEM
+     * DESIGN : to form background we take the wallpaper (set 
+                in screen-properties), and make it transparent
+                if neccesary
+     * ADDED : Option to load standard settings file into memory
+     * FIXED : After renaming the recyclebin, it's link wouldn't work
+     * DESIGN : Redesigned options form
+     * ADDED : Option to choose which of the quickicons you 
+	       want to show, if any
+     * FIXED : Computer crashed when RepShell was default shell
+     * FIXED : In menu when moved from folder to non-folder 
+	       item, a new submenu was shown on non-folder item
+     * FIXED : Taskbuttons which had focus, didn't redraw correctly
+	       until you moved over it.
+
+Features:   - Fully enabled taskbox with cool buttons
+	    - In systemmenus added option "Always On Top"
+	      to every window, which is automaticall detected
+	      Menu is only visible from RepShell Taskbox
+	    - Fully functional systemtray
+	    - Right-click my computer icon to show menu
+	    - Automatic drive recognition and listing
+	    - Direct access to all folders
+            - Context menus for desktop items 
+            - Arrow navigation on desktop and in menus
+	    - Choose your own colors for menus 
+      	    - Very fast file searching
+            - Ability to make RepShell default shell from the option form
+	    - Option form to change a lot of settings
+            - Working desktop refreshing
+	    - Added item to context menu of desktopitems to rename them, 
+	      this is not a standard windows function 
+            - Simple DUN functions
+	    - Connection info is shown in cool Balloon Tooltip
+
+WHAT CAN YOU EXPECT IN THE NEXT VERSION?
+	- Optimized Systray
+	- Scrolling in menus, if the are larger then screen
+	- Enabling online time
+	- More animated buttons, maybe make the folder items 
+	  on desktop animated
+	- Adding the options, to change taskbutton colors from
+ 	  option screen.
+ 	- Any suggestions?
+
+Even if you don't like the program there's a lot you can 
+learn from here. And I really mean a lot. It's up to you 
+guys to fully test it. Please leave comments.
+
+If you're an experienced programmer please contact me,
+i've been having some problems, maybe you can help me
+out.
+
+Salihman
+w/ special thanks to Zorix
